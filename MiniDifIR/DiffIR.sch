@@ -1,0 +1,388 @@
+EESchema Schematic File Version 2
+LIBS:74xx
+LIBS:switcher
+LIBS:adc-dac
+LIBS:analog-switches
+LIBS:atmel
+LIBS:bjt
+LIBS:can
+LIBS:capacitive
+LIBS:cmos4000
+LIBS:conn
+LIBS:device
+LIBS:digital-audio
+LIBS:digpot
+LIBS:diode
+LIBS:display
+LIBS:fet
+LIBS:hc11
+LIBS:i2c
+LIBS:inductive
+LIBS:intel
+LIBS:interface
+LIBS:linear
+LIBS:memory
+LIBS:microchip
+LIBS:opto
+LIBS:periph
+LIBS:power
+LIBS:protection
+LIBS:regul
+LIBS:renesas
+LIBS:resist
+LIBS:supervisor
+LIBS:video
+LIBS:figaro
+LIBS:radio
+LIBS:automation
+LIBS:graphic
+LIBS:xilinx
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY25-SS IC1
+U 1 1 56E9FD4A
+P 4375 2375
+F 0 "IC1" H 3225 2775 50  0000 C CNN
+F 1 "ATTINY25-SS" H 5375 1975 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5375 2375 50  0001 C CIN
+F 3 "" H 4375 2375 50  0000 C CNN
+	1    4375 2375
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 56E9FD98
+P 2850 3225
+F 0 "R1" H 2880 3245 50  0000 L CNN
+F 1 "6k8" H 2880 3185 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 2850 3225 50  0001 C CNN
+F 3 "" H 2850 3225 50  0000 C CNN
+	1    2850 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C1
+U 1 1 56E9FDD8
+P 2575 2300
+F 0 "C1" H 2585 2370 50  0000 L CNN
+F 1 "22uF 25v" H 2585 2220 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_5x5.7" H 2575 2300 50  0001 C CNN
+F 3 "" H 2575 2300 50  0000 C CNN
+	1    2575 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 56E9FE32
+P 3150 2425
+F 0 "C2" H 3160 2495 50  0000 L CNN
+F 1 "100nF" H 3160 2345 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3150 2425 50  0001 C CNN
+F 3 "" H 3150 2425 50  0000 C CNN
+	1    3150 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 56E9FF0F
+P 3400 3250
+F 0 "C3" H 3410 3320 50  0000 L CNN
+F 1 "1nF" H 3410 3170 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3400 3250 50  0001 C CNN
+F 3 "" H 3400 3250 50  0000 C CNN
+	1    3400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 56E9FF4F
+P 5800 2925
+F 0 "R2" H 5830 2945 50  0000 L CNN
+F 1 "866R" H 5830 2885 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5800 2925 50  0001 C CNN
+F 3 "" H 5800 2925 50  0000 C CNN
+	1    5800 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 56E9FF88
+P 6075 2975
+F 0 "R3" H 6105 2995 50  0000 L CNN
+F 1 "1k" H 6105 2935 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6075 2975 50  0001 C CNN
+F 3 "" H 6075 2975 50  0000 C CNN
+	1    6075 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R4
+U 1 1 56E9FFB3
+P 6350 3050
+F 0 "R4" H 6380 3070 50  0000 L CNN
+F 1 "330R" H 6380 3010 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6350 3050 50  0001 C CNN
+F 3 "" H 6350 3050 50  0000 C CNN
+	1    6350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 56E9FFED
+P 5800 3425
+F 0 "D2" H 5800 3525 50  0000 C CNN
+F 1 "IR1" H 5800 3325 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 5800 3425 50  0001 C CNN
+F 3 "" H 5800 3425 50  0000 C CNN
+	1    5800 3425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 56EA003D
+P 6075 3425
+F 0 "D3" H 6075 3525 50  0000 C CNN
+F 1 "IR2" H 6075 3325 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 6075 3425 50  0001 C CNN
+F 3 "" H 6075 3425 50  0000 C CNN
+	1    6075 3425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 56EA0088
+P 6350 3525
+F 0 "D4" H 6350 3625 50  0000 C CNN
+F 1 "PWR" H 6350 3425 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 6350 3525 50  0001 C CNN
+F 3 "" H 6350 3525 50  0000 C CNN
+	1    6350 3525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_02X03 P1
+U 1 1 56EA00EB
+P 7125 3325
+F 0 "P1" H 7125 3525 50  0000 C CNN
+F 1 "AVR_ISP" H 7125 3125 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 7125 2125 50  0001 C CNN
+F 3 "" H 7125 2125 50  0000 C CNN
+	1    7125 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R5
+U 1 1 56EA0147
+P 6650 2375
+F 0 "R5" H 6680 2395 50  0000 L CNN
+F 1 "3k" H 6680 2335 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6650 2375 50  0001 C CNN
+F 3 "" H 6650 2375 50  0000 C CNN
+	1    6650 2375
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 56EA01A0
+P 6950 2475
+F 0 "R6" H 6980 2495 50  0000 L CNN
+F 1 "3k3" H 6980 2435 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6950 2475 50  0001 C CNN
+F 3 "" H 6950 2475 50  0000 C CNN
+	1    6950 2475
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X03 P2
+U 1 1 56EA01E2
+P 8250 3875
+F 0 "P2" H 8250 4075 50  0000 C CNN
+F 1 "OUT" V 8350 3875 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 8250 3875 50  0001 C CNN
+F 3 "" H 8250 3875 50  0000 C CNN
+	1    8250 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L1
+U 1 1 56EA0229
+P 7850 3500
+F 0 "L1" H 7880 3540 50  0000 L CNN
+F 1 "1uH" H 7880 3460 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7850 3500 50  0001 C CNN
+F 3 "" H 7850 3500 50  0000 C CNN
+	1    7850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3275 2175 3150 2175
+Wire Wire Line
+	3150 1775 3150 2325
+Wire Wire Line
+	3150 2525 3150 3425
+Wire Wire Line
+	3150 2675 3275 2675
+Wire Wire Line
+	2575 1775 7850 1775
+Connection ~ 3150 2175
+Wire Wire Line
+	2575 3425 5550 3425
+Wire Wire Line
+	2850 3425 2850 3325
+Wire Wire Line
+	3400 3425 3400 3350
+Connection ~ 2850 3425
+Connection ~ 3150 3425
+Connection ~ 3150 2675
+Wire Wire Line
+	5475 2275 5700 2275
+Wire Wire Line
+	5700 2275 5700 3050
+Wire Wire Line
+	5700 3050 2850 3050
+Wire Wire Line
+	2850 2875 2850 3125
+Wire Wire Line
+	3400 3150 3400 3050
+Connection ~ 3400 3050
+Wire Wire Line
+	5800 2825 5800 2675
+Wire Wire Line
+	5475 2675 7500 2675
+Wire Wire Line
+	6075 2875 6075 2575
+Wire Wire Line
+	5475 2575 6775 2575
+Wire Wire Line
+	6350 2950 6350 2375
+Wire Wire Line
+	5475 2375 6550 2375
+Wire Wire Line
+	5800 3225 5800 3025
+Wire Wire Line
+	6075 3225 6075 3075
+Wire Wire Line
+	6350 3325 6350 3150
+Wire Wire Line
+	5550 3425 5550 3875
+Wire Wire Line
+	5550 3875 8050 3875
+Wire Wire Line
+	6350 3875 6350 3725
+Connection ~ 3400 3425
+Wire Wire Line
+	5800 3625 5800 3875
+Connection ~ 5800 3875
+Wire Wire Line
+	6075 3625 6075 3875
+Connection ~ 6075 3875
+Wire Wire Line
+	7375 3425 7575 3425
+Wire Wire Line
+	7575 3425 7575 3875
+Connection ~ 6350 3875
+Connection ~ 7575 3875
+Wire Wire Line
+	8050 3975 7850 3975
+Wire Wire Line
+	7850 3975 7850 3600
+Wire Wire Line
+	6850 2475 5475 2475
+Connection ~ 6350 2375
+Wire Wire Line
+	8050 3775 8000 3775
+Wire Wire Line
+	8000 3775 8000 2375
+Wire Wire Line
+	8000 2375 6750 2375
+Wire Wire Line
+	7050 2475 8000 2475
+Connection ~ 8000 2475
+Wire Wire Line
+	7375 3225 7850 3225
+Wire Wire Line
+	7850 1775 7850 3400
+Wire Wire Line
+	7500 2675 7500 3325
+Wire Wire Line
+	7500 3325 7375 3325
+Connection ~ 5800 2675
+Wire Wire Line
+	6875 3425 6525 3425
+Wire Wire Line
+	6525 3425 6525 2175
+Wire Wire Line
+	6525 2175 5475 2175
+Wire Wire Line
+	6875 3325 6675 3325
+Wire Wire Line
+	6675 3325 6675 2475
+Connection ~ 6675 2475
+Wire Wire Line
+	6775 2575 6775 3225
+Wire Wire Line
+	6775 3225 6875 3225
+Connection ~ 6075 2575
+$Comp
+L VCC #PWR01
+U 1 1 56EA353B
+P 4225 3000
+F 0 "#PWR01" H 4225 2850 50  0001 C CNN
+F 1 "VCC" H 4225 3150 50  0000 C CNN
+F 2 "" H 4225 3000 50  0000 C CNN
+F 3 "" H 4225 3000 50  0000 C CNN
+	1    4225 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 56EA357F
+P 4000 3350
+F 0 "#PWR02" H 4000 3100 50  0001 C CNN
+F 1 "GND" H 4000 3200 50  0000 C CNN
+F 2 "" H 4000 3350 50  0000 C CNN
+F 3 "" H 4000 3350 50  0000 C CNN
+	1    4000 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4225 3000 4225 3050
+Connection ~ 4225 3050
+Wire Wire Line
+	4000 3350 4000 3425
+Connection ~ 4000 3425
+Connection ~ 7850 3225
+Connection ~ 3150 1775
+$Comp
+L LED D1
+U 1 1 56EA38D2
+P 2850 2675
+F 0 "D1" H 2850 2775 50  0000 C CNN
+F 1 "SFH3100F" H 2850 2575 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 2850 2675 50  0001 C CNN
+F 3 "" H 2850 2675 50  0000 C CNN
+	1    2850 2675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 2475 2850 1775
+Connection ~ 2850 1775
+Connection ~ 2850 3050
+Wire Wire Line
+	2575 2200 2575 1775
+Wire Wire Line
+	2575 2400 2575 3425
+$EndSCHEMATC
