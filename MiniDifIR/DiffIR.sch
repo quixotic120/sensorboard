@@ -37,6 +37,7 @@ LIBS:radio
 LIBS:automation
 LIBS:graphic
 LIBS:xilinx
+LIBS:DiffIR-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -385,4 +386,28 @@ Wire Wire Line
 	2575 2200 2575 1775
 Wire Wire Line
 	2575 2400 2575 3425
+$Comp
+L TEST_1P W1
+U 1 1 56F6ED18
+P 2275 5375
+F 0 "W1" H 2275 5645 50  0000 C CNN
+F 1 "TEST_1P" H 2275 5575 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 2475 5375 50  0001 C CNN
+F 3 "" H 2475 5375 50  0000 C CNN
+	1    2275 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEST_1P W2
+U 1 1 56F6ED5F
+P 2725 5375
+F 0 "W2" H 2725 5645 50  0000 C CNN
+F 1 "TEST_1P" H 2725 5575 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 2925 5375 50  0001 C CNN
+F 3 "" H 2925 5375 50  0000 C CNN
+	1    2725 5375
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2725 5375
+NoConn ~ 2275 5375
 $EndSCHEMATC
